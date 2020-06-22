@@ -28,4 +28,4 @@ jobs:
     - name: Install Surge
       run: npm install -g surge
     - name: Run Surge
-      run: surge ./ zainali_2k3.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./ zainali2k3-expense-tracker.surge.sh --token ${{secrets.SURGE_TOKEN}}
