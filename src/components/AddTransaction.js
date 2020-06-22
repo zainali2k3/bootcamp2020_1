@@ -1,10 +1,8 @@
 import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import { DatePicker } from "react-datepicker";
 export const AddTransaction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
-  const [date, setDate] = useState(new Date());
   const { addTransaction } = useContext(GlobalContext);
 
   const onSubmit = (e) => {
